@@ -41,10 +41,29 @@ jmp EXIT
 
 PRINT_RESULT:
 mov ax, dx
-aam
-add dl, 30h
-mov ah, 2
-int 21h
+mov cx, 0 
+
+START1:
+    aam
+
+    mov bl, al
+    mov bh, ah
+
+    push ax
+    inc cx
+
+    mov al, bh
+    mov ah, 0
+
+    cmp al, 0
+    jnz START1
+
+START2:
+    pop dx
+    add dx, 30h
+    mov ah, 2
+    int 21h
+    loop START2
 
 EXIT:
 
