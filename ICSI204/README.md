@@ -4,5 +4,5 @@
 
 
 - [x] lab5
-- [ ] lab6
+- [x] lab6
 - [ ] lab7 
