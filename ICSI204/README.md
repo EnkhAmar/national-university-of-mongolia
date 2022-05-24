@@ -3,6 +3,6 @@
 2021-2022 Spring
 
 
-- [ ] lab5
-- [ ] lab6
-- [ ] lab7 
+- [x] lab5
+- [x] lab6
+- [x] lab7 
